@@ -1,16 +1,17 @@
-import { useState } from 'react';
+import { useState } from 'react'
 // import reactLogo from './assets/react.svg';
 // import viteLogo from '/vite.svg';
-import './App.css';
-import Toolbar from './Components/Toolbar';
+import './App.css'
+import Toolbar from './Components/Toolbar'
+import ToolbarButton from './Components/ToolBarButton'
+import '@fontsource/open-sans' // Defaults to weight 400.
 
-function App() {
+function App () {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-
-      <Toolbar />
+    <div className='font-body'>
+      <Toolbar></Toolbar>
       {/* <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
@@ -19,7 +20,7 @@ function App() {
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
       </div> */}
-    </>
+    </div>
   )
 }
 
