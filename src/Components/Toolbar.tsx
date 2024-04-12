@@ -1,7 +1,18 @@
-import React from 'react'
+import React, { SetStateAction, useState } from 'react'
 import ToolbarButton from './ToolBarButton'
+// import Select from 'react-select';
+
+
 
 const Toolbar = () => {
+
+  // const [animal, setAnimal] = useState(null);
+  // const handleChange = () => {
+  //   console.log("value:");
+  //   // setAnimal(value);
+  // };
+
+
   return (
     <>
       <div className='p-18px bg-white border-F1F2F3 space-x-14px border rounded-md shadow-simple-1'>
@@ -15,14 +26,10 @@ const Toolbar = () => {
             <ToolbarButton>Compare With...</ToolbarButton>
           </div>
         </div>
-      </div>
-      <div className='bg-white p-18px flex justify-start' >
-        <h2>Type</h2>
-        <select className='p-2 px-14px min-w-120px bg-white border-F1F2F3 border rounded-md shadow-simple-1'>
-          <option>Option 1</option>
-          <option>Option 2</option>
-          <option>Option 3</option>
-        </select>
+      
+
+
+      
       </div>
     </>
   )
