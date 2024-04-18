@@ -12,11 +12,12 @@ const InTableSelect: React.FC<Props> = (props) => {
         styles={{
             
             control: (baseStyles, state) => ({
-                ...baseStyles,
-                borderRadius: '0',
+                // ...baseStyles,
                 borderColor: 'none' ,
                 boxShadow: state.isFocused ? "" : "",
                 ":focus-visible": { borderColor: 'red', },
+                borderRadius: '0px',
+                display: 'flex',
                 height: '100%',
             }),
         }}
