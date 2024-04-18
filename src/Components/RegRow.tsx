@@ -14,7 +14,7 @@ const RegRow: React.FC<RegRowProps> = (props) => {
                 <div className="border row-span-2">
                     <input type='text' placeholder='Address' className='bg-white w-full px-2'></input>
                 </div>
-                <div className="border row-span-2">
+                <div className="border row-span-1">
                     <InTableSelect placeholder='Type'
                         options={[
                             { value: 'numeric', label: 'Numeric' },
@@ -36,34 +36,25 @@ const RegRow: React.FC<RegRowProps> = (props) => {
                         ]} >
                     </InTableSelect>
                 </div>
-                {/* <div className="border col-span-3">
-                    <InTableSelect placeholder='description'
-                        options={[
-                            { value: 'chocolate', label: 'Chocolate' },
-                            { value: 'strawberry', label: 'Strawberry' },
-                            { value: 'vanilla', label: 'Vanilla' },
-                        ]} >
-                    </InTableSelect>
-
-                </div> */}
+                
                 <div className="border col-span-3">
-                    <input type='textarea' placeholder='Description' className='bg-white w-full px-2'></input>
+                    <input type='textarea' placeholder='Description' className='bg-white w-full px-2 focus-visible:red'></input>
                 </div>
                 <div className="border col-span-3">
-                    <input type='textarea' placeholder='Notes' className='bg-white w-full px-2'></input>
+                    <input type='textarea' placeholder='Notes' className='bg-white w-full px-2 focus-visible:red'></input>
                 </div>
                 <div className="col-span-6 grid grid-cols-4">
                     <div className="border ">
-                        <input type='text' placeholder='Perm' className='bg-white w-full  px-2'></input>
+                        <input type='text' placeholder='Perm' className='bg-white w-full px-2 focus-visible:red'></input>
                     </div>
                     <div className="border ">
-                        <input type='text' placeholder='Validation' className='bg-white w-full px-2'></input>
+                        <input type='text' placeholder='Validation' className='bg-white w-full px-2 focus-visible:red'></input>
                     </div>
                     <div className="border ">
-                        <input type='text' placeholder='Parsing' className='bg-white w-full px-2'></input>
+                        <input type='text' placeholder='Parsing' className='bg-white w-full px-2 focus-visible:red'></input>
                     </div>
                     <div className="border ">
-                        <input type='text' placeholder='Relation' className='bg-white w-full px-2'></input>
+                        <input type='text' placeholder='Relation' className='bg-white w-full px-2 focus-visible:red'></input>
                     </div>
                 </div>
             </div>
