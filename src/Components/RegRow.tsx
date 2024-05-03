@@ -17,7 +17,7 @@ const RegRow: React.FC<RegRowProps> = (props) => {
                 <div className="border row-span-2 grid">
                     <input type='text' placeholder='Address' className='bg-white w-full px-2'></input>
                 </div>
-                <div className="border row-span-2 col-span-2 grid ">
+                <div className="border row-span-2 col-span-2 grid bg-white">
                     <InTableSelect placeholder='Type' className='bg-white w-full px-2'
                         options={[
                             { value: 'numeric', label: 'Numeric' },
